@@ -1,20 +1,111 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Mon Jeu Mobile</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body { font-family: sans-serif; background-color: #111; color: #fff; text-align: center; }
-button { padding: 10px 20px; font-size: 18px; margin-top: 20px; }
-img { max-width: 90%; margin: 10px 0; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeonRush - Jeu Mobile Arcade Néon</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #07080c;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      padding: 40px 20px;
+    }
+
+    .studio-logo img {
+      width: 180px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #00d4ff;
+      text-shadow: 0 0 12px #00d4ff;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #ff007a;
+      text-shadow: 0 0 8px #ff007a;
+      margin-top: 40px;
+    }
+
+    p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+      color: #cfd3d8;
+    }
+
+    .logo-game {
+      margin-top: 40px;
+    }
+
+    .logo-game img {
+      width: 320px;
+    }
+
+    .cta {
+      margin-top: 50px;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #ff007a;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 20px;
+      box-shadow: 0 0 10px #ff007a;
+      transition: 0.2s;
+    }
+
+    .cta a:hover {
+      background: #ff4aa2;
+      box-shadow: 0 0 20px #ff4aa2;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-bottom: 40px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-<h1>Mon Jeu Mobile</h1>
-<img src="screenshot1.png" alt="Screenshot">
-<p>Découvrez mon endless runner néon sur Android !</p>
-<a href="https://play.google.com/store/apps/details?id=ton.package"><button>Installer sur Google Play</button></a>
-<p><a href="privacy.html" style="color:#0f0;">Politique de confidentialité</a></p>
+  <div class="container">
+    <div class="studio-logo">
+      <!-- Remplacer ce src par le lien GitHub de ton logo une fois uploadé -->
+      <img src="studio_logo.svg" alt="Logo Pipou Pixel Works" />
+    </div>
+
+    <h1>NeonRush</h1>
+    <p>Le jeu mobile arcade ultime où vitesse, réflexes et changement de couleurs font la loi. Esquive les obstacles, survive le plus longtemps possible et défie tes amis !</p>
+
+    <div class="logo-game">
+      <img src="neonrush_logo.png" alt="Logo NeonRush" />
+    </div>
+
+    <h2>Un gameplay simple, une intensité maximale</h2>
+    <p>
+      Change automatiquement de couleur, esquive les blocs, récupère des bonus, améliore ton score. NeonRush est pensé pour être addictif, fluide et visuellement hypnotique.
+    </p>
+
+    <div class="cta">
+      <a href="#">Télécharger sur Google Play</a>
+    </div>
+
+    <footer>
+      © 2025 Pipou Pixel Works — Tous droits réservés.
+        <p><a href="privacy.html" style="color:#00d4ff;">Politique de confidentialité</a></p>
+    </footer>
+  </div>
 </body>
 </html>
