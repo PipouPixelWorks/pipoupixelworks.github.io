@@ -1,0 +1,17 @@
+---
+layout: default
+title: Neon Rush — Privacy Policy
+---
+
+# Politique de confidentialité — Neon Rush
+
+Neon Rush ne collecte pas de données personnelles directement via le site.  
+Les versions du jeu distribuées via Google Play peuvent utiliser des services tiers (analytics / ads) — leur politique est indiquée ci-dessous.
+
+## Services tiers potentiels
+- Google Play Services
+- AdMob
+- Unity Analytics (si utilisé)
+
+Pour toute question : pipoupixelworks@gmail.com
+
