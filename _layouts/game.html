@@ -24,7 +24,9 @@
         <p>📱 Plateforme : {{ page.platforms | join: ", " }}</p>
         <p>🚧 Statut : {{ page.status }}</p>
         {% if page.privacy_policy %}
-        <p>🔒 <a class="game-privacy-link" href="{{ page.privacy_policy | relative_url }}">Privacy Policy</a></p>
+        <p>
+        🔒 <a class="btn privacy-btn" href="{{ page.privacy_policy | relative_url }}">Privacy Policy</a>
+        </p>
         {% endif %}
       </div>
     </div>
