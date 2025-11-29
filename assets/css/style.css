@@ -1,103 +1,143 @@
-/* ===== Pixel Art Base ===== */
+/* ------------------------------------
+      GLOBAL NES THEME
+------------------------------------- */
+
 body {
-  font-family: 'Press Start 2P', monospace;
-  background: #f0f0f0;
-  color: #111;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    font-family: "Press Start 2P", cursive;
+    background: #d0d0d0; /* gris NES */
+    color: #111;
+    image-rendering: pixelated;
 }
 
-/* Header / Nav */
-.site-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 12px 20px;
-  background: #fff;
-  border-bottom: 5px solid #000;
+a {
+    color: #c0392b; /* rouge NES */
+    text-decoration: none;
 }
-.site-header .logo img {
-  width: 92px;
-  image-rendering: pixelated;
+
+a:hover {
+    color: #e74c3c;
 }
+
+/* ------------------------------------
+      HEADER
+------------------------------------- */
+.header {
+    padding: 20px;
+    background: #b8b8b8; /* gris NES */
+    border-bottom: 6px solid #000;
+}
+
+.header img {
+    width: 150px;
+    image-rendering: pixelated;
+}
+
+/* ------------------------------------
+      NAV BAR
+------------------------------------- */
+
+.main-nav {
+    background: #9b9b9b;
+    padding: 10px;
+    border-bottom: 6px solid #000;
+}
+
 .main-nav a {
-  color: #000;
-  text-decoration: none;
-  margin-left: 12px;
-  font-size: 12px;
+    margin-right: 20px;
+    font-size: 12px;
 }
 
-/* Content */
-.site-content { max-width: 960px; margin: 20px auto; padding: 0 16px; }
+/* ------------------------------------
+      CONTENT
+------------------------------------- */
 
-/* Game page */
-.game-head {
-  display: flex;
-  gap: 16px;
-  background: #fff;
-  border: 4px solid #000;
-  padding: 12px;
-  border-radius: 4px;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-.game-art {
-  width: 220px;
-  height: auto;
-  image-rendering: pixelated;
-  border: 3px solid #000;
-}
-.game-meta h1 { font-size: 18px; margin: 0 0 6px 0; }
-.game-meta p { margin: 4px 0; font-size: 12px; }
-
-/* Screenshots */
-.game-screenshots {
-  margin-top: 18px;
-}
-.screenshots-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.screenshot-img {
-  width: 200px;
-  border: 3px solid #000;
-  image-rendering: pixelated;
+.content {
+    max-width: 900px;
+    padding: 20px;
+    margin: auto;
 }
 
-/* Cards / homepage */
-.card { display:flex; gap:16px; align-items:center; background:#fff; border:4px solid #000; padding:12px; border-radius:6px; margin-bottom:16px; }
-.card-art { width:140px; height:auto; image-rendering: pixelated; }
-.card-info h2 { margin:0 0 8px 0; font-size:14px; }
-.card-info p { margin:0 0 10px 0; font-size:11px; line-height:1.2; color:#333; }
-.btn { display:inline-block; padding:6px 10px; background:#00b3a6; color:#fff; text-decoration:none; font-size:11px; border-radius:4px; }
+/* ------------------------------------
+      NES PIXEL CARD
+------------------------------------- */
 
-/* Footer */
-.site-footer { text-align: center; padding: 14px; border-top: 5px solid #000; margin-top: 20px; font-size: 11px; }
+.pixel-card {
+    padding: 20px;
+    margin: 20px 0;
+    background: #cfcfcf;
+    color: #000;
 
-/* Links */
-.privacy-btn {
-  display: inline-block;
-  padding: 6px 10px;
-  background: #ff5e5e;
-  color: #fff;
-  text-decoration: none;
-  font-size: 11px;
-  border: 3px solid #000;
-  border-radius: 4px;
-  image-rendering: pixelated;
+    border: 4px solid #000;
+    box-shadow:
+        0 0 0 4px #ffffff,
+        0 0 0 8px #000,
+        0 0 0 12px #7a7a7a; /* triple bordure type NES */
 }
-.privacy-btn:hover {
-  background: #ff3b3b;
-}
-.game-privacy-link { color: #00aaff; text-decoration: none; font-weight: bold; }
 
-@media(max-width:700px) {
-  .game-head {
-    flex-direction: column;
-    align-items: center;
+.pixel-card h2 {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+/* ------------------------------------
+      GAME PAGE LAYOUT
+------------------------------------- */
+
+.game-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.game-wrapper img {
+    width: 240px;
+    image-rendering: pixelated;
+
+    border: 4px solid #000;
+    box-shadow:
+        0 0 0 4px #ffffff,
+        0 0 0 8px #000,
+        0 0 0 12px #7a7a7a;
+}
+
+.game-info {
+    flex: 1;
+    min-width: 220px;
+    font-size: 12px;
+}
+
+/* ------------------------------------
+      NES BUTTON
+------------------------------------- */
+
+.nes-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #c0392b; /* rouge NES */
+    color: #fff;
+    border: 4px solid #000;
+    box-shadow:
+        0 0 0 4px #fff,
+        0 0 0 8px #000;
+
+    font-size: 10px;
+}
+
+.nes-button:hover {
+    background: #e74c3c;
+}
+
+/* ------------------------------------
+      FOOTER
+------------------------------------- */
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
     text-align: center;
-  }
-  .game-art { width: 160px; }
-  .screenshots-grid { justify-content: center; }
+    background: #b8b8b8;
+    border-top: 6px solid #000;
+    font-size: 10px;
 }
