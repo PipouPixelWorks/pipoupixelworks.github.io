@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<article class="game-page">
+    <h2>{{ page.title }}</h2>
+
+    {% if page.cover %}
+    <img class="game-cover" src="{{ page.cover }}" alt="Cover {{ page.title }}">
+    {% endif %}
+
+    <p>{{ page.description }}</p>
+
+    <h3>Plateformes</h3>
+    <ul>
+        {% for p in page.platforms %}
+        <li>{{ p }}</li>
+        {% endfor %}
+    </ul>
+
+    <p><strong>Statut :</strong> {{ page.status }}</p>
+
+    <p><a href="{{ page.privacy_policy }}">Privacy Policy</a></p>
+
+    <hr>
+
+    <div class="game-content">
+        {{ content }}
+    </div>
+</article>
+
