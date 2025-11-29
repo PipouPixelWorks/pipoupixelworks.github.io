@@ -1,51 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>{{ page.title }} - {{ site.title }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }} - {{ site.title }}</title>
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  {% include header.html %}
+{% include header.html %}
 
-  <main class="site-content">
+<main class="site-content">
 
-    <article class="game-page">
+  <article class="game-page">
 
-      <div class="game-head">
-        <img class="game-art" src="{{ page.cover | relative_url }}" alt="{{ page.title }} logo">
-
-        <div class="game-meta">
-          <h1 class="game-title">{{ page.title }}</h1>
-          <p class="game-short">{{ page.description }}</p>
-
-          <p><strong>Plateformes :</strong> {{ page.platforms | join: ", " }}</p>
-          <p><strong>Statut :</strong> {{ page.status }}</p>
-
-          {% if page.privacy_policy %}
-          <p class="game-privacy">🔒 <a href="{{ page.privacy_policy | relative_url }}">Privacy Policy</a></p>
-          {% endif %}
-        </div>
+    <div class="game-head">
+      <img class="game-art" src="{{ page.cover | relative_url }}" alt="{{ page.title }} logo">
+      <div class="game-meta">
+        <h1 class="game-title">{{ page.title }}</h1>
+        <p class="game-short">{{ page.description }}</p>
+        <p>📱 Plateforme : {{ page.platforms | join: ", " }}</p>
+        <p>🚧 Statut : {{ page.status }}</p>
+        {% if page.privacy_policy %}
+        <p>🔒 <a class="game-privacy-link" href="{{ page.privacy_policy | relative_url }}">Privacy Policy</a></p>
+        {% endif %}
       </div>
-
-      <section class="game-body">
-        {{ content }}
-      </section>
-
-    </article>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p>© {{ "now" | date: "%Y" }} Pipou Pixel Works — Tous droits réservés.</p>
     </div>
-  </footer>
 
-</body>
-</html>
+    {% if page.screenshots %}
+    <section class="game-screenshots">
+      <h2>Screensh
 
