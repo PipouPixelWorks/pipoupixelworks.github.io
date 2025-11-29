@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ page.title }} - Pipou Pixel Works</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ page.title }} - {{ site.title }}</title>
 
-<!-- CSS avec chemins compatibles GitHub Pages -->
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <!-- CSS via relative_url -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <!-- Police pixel (Press Start 2P) -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
+  {% include header.html %}
 
-<header class="header">
-<a class="logo" href="{{ '/' | relative_url }}">
-<img src="{{ '/assets/img/studio_logo.png' | relative_url }}" alt="Pipou Pixel Works">
-</a>
-</header>
+  <main class="site-content">
+    {{ content }}
+  </main>
 
-<nav class="main-nav">
-<a href="{{ '/' | relative_url }}">Accueil</a>
-<a href="{{ '/mentions-legales.html' | relative_url }}">Mentions légales</a>
-</nav>
-
-<main class="content">
-{{ content }}
-</main>
-
-<footer class="footer">
-<p>© {{ "now" | date: "%Y" }} Pipou Pixel Works — Tous droits réservés.</p>
-</footer>
-
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© {{ "now" | date: "%Y" }} Pipou Pixel Works — <a href="mailto:pipoupixelworks@gmail.com">pipoupixelworks@gmail.com</a></p>
+    </div>
+  </footer>
 </body>
 </html>
 

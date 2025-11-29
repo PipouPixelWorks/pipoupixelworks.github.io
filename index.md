@@ -3,17 +3,21 @@ layout: default
 title: Accueil
 ---
 
+<section class="hero">
+  <h1>Pipou Pixel Works</h1>
+  <p>Studio indépendant — jeux mobiles en pixel art.</p>
+</section>
 
-<h1>🎮 Nos jeux</h1>
-<div class="games-list">
-{% for game in site.games %}
-<div class="game-card">
-<img src="{{ game.cover }}" alt="{{ game.title }}" class="game-logo">
-<div class="game-info">
-<h2>{{ game.title }}</h2>
-<p>{{ game.description }}</p>
-<a class="btn" href="{{ game.url }}">Voir le jeu</a>
-</div>
-</div>
-{% endfor %}
-</div>
+<section class="games-list">
+  {% for game in site.games %}
+    <article class="card">
+      <img class="card-art" src="{{ game.cover | relative_url }}" alt="{{ game.title }}">
+      <div class="card-info">
+        <h2>{{ game.title }}</h2>
+        <p>{{ game.description }}</p>
+        <a class="btn" href="{{ game.url | relative_url }}">Voir le jeu</a>
+      </div>
+    </article>
+  {% endfor %}
+</section>
+

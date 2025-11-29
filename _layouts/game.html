@@ -4,37 +4,24 @@ layout: default
 
 <article class="game-page">
 
-    <div class="game-header">
-        {% if page.cover %}
-        <img class="game-cover" src="{{ page.cover }}" alt="Cover {{ page.title }}">
-        {% endif %}
+  <div class="game-head">
+    <img class="game-art" src="{{ page.cover | relative_url }}" alt="{{ page.title }} logo">
+    <div class="game-meta">
+      <h1 class="game-title">{{ page.title }}</h1>
+      <p class="game-short">{{ page.description }}</p>
 
-        <div class="game-info">
-            <h2>{{ page.title }}</h2>
-            <p>{{ page.description }}</p>
+      <p><strong>Plateformes :</strong> {{ page.platforms | join: ", " }}</p>
+      <p><strong>Statut :</strong> {{ page.status }}</p>
 
-            <h3>Plateformes</h3>
-            <ul>
-                {% for p in page.platforms %}
-                <li>{{ p }}</li>
-                {% endfor %}
-            </ul>
-
-            <p><strong>Statut :</strong> {{ page.status }}</p>
-
-            {% if page.privacy_policy %}
-            <p class="privacy-link">
-                🔒 <a href="{{ page.privacy_policy }}">Privacy Policy</a>
-            </p>
-            {% endif %}
-        </div>
+      {% if page.privacy_policy %}
+      <p class="game-privacy">🔒 <a href="{{ page.privacy_policy | relative_url }}">Privacy Policy</a></p>
+      {% endif %}
     </div>
+  </div>
 
-    <hr>
-
-    <div class="game-content">
-        {{ content }}
-    </div>
+  <section class="game-body">
+    {{ content }}
+  </section>
 
 </article>
 

@@ -1,10 +1,16 @@
---
+---
 layout: default
 title: Mentions légales
 ---
 
+# Mentions légales
 
-<h1>Mentions légales</h1>
-<p><strong>Propriétaire :</strong> Olivier Jimenez<br>SIREN : 994465391<br>Adresse : 32 avenue de Saint Médard, 33700 Mérignac, France<br>Email : <a href="mailto:pipoupixelworks@gmail.com">pipoupixelworks@gmail.com</a></p>
-<p><strong>Hébergement :</strong> GitHub Pages - GitHub, Inc.</p>
-<p>Le site et ses contenus (textes, images, logos, jeux) sont la propriété de Pipou Pixel Works.</p>
+**Propriétaire :** Olivier Jimenez — Micro-entrepreneur  
+**SIREN :** 994 465 391  
+**Adresse :** 32 avenue de Saint Médard, 33700 Mérignac, France  
+**Email :** <a href="mailto:pipoupixelworks@gmail.com">pipoupixelworks@gmail.com</a>
+
+**Hébergement :** GitHub Pages (GitHub, Inc.)
+
+Le site et ses contenus (textes, images, logos) sont la propriété de Pipou Pixel Works.
+

@@ -1,22 +1,16 @@
 ---
-layout: default
-title: Neon Rush
-description: Shooter vertical en pixel art, rapide et nerveux.
+layout: game
+title: "Neon Rush"
+description: "Shoot'em up vertical futuriste en pixel art, rapide et nerveux."
 platforms:
-- Android
+  - Android
 status: En développement
 cover: /assets/img/neonrush_logo.png
 privacy_policy: /privacy/neon-rush-privacy.html
 ---
 
+<p>Neon Rush est un shoot 'em up vertical où tu esquives, tirs et exploses des vagues ennemies dans un univers néon.</p>
 
-<div class="game-page">
-<img src="{{ page.cover }}" alt="{{ page.title }}" class="game-page-logo">
-<div class="game-page-info">
-<h2>{{ page.title }}</h2>
-<p>{{ page.description }}</p>
-<p><strong>Plateformes :</strong> {{ page.platforms | join: ", " }}</p>
-<p><strong>Statut :</strong> {{ page.status }}</p>
-<p class="privacy-link">🔒 <a href="{{ page.privacy_policy }}">Privacy Policy</a></p>
-</div>
-</div>
+## Screenshots
+<!-- Pour ajouter des screenshots, place les images dans assets/img/screenshots/ et ajoute ici -->
+
