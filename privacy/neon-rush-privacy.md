@@ -4,7 +4,7 @@ title: "Politique de confidentialité - Neon Rush"
 permalink: /privacy/neon-rush-privacy/
 ---
 
-[← Retour au jeu](../games/neon-rush/)  
+  [← Retour au jeu]({{ '/games/neon-rush/' | relative_url }})
 
 # Politique de confidentialité - Neon Rush
 
@@ -107,4 +107,5 @@ Vous pouvez nous contacter pour recevoir de l’aide ou des instructions pour ex
 
 Cette politique peut être mise à jour de temps en temps. Nous vous recommandons de la consulter régulièrement pour être informé des éventuelles modifications.
 
-[← Retour au jeu](../games/neon-rush/)
+[← Retour au jeu]({{ '/games/neon-rush/' | relative_url }})
+
