@@ -23,7 +23,8 @@ body {
 }
 
 .header .logo img {
-    height: 40px; /* réduit pour équilibre visuel */
+    height: 40px;       /* Desktop */
+    max-width: 150px;
     width: auto;
     image-rendering: pixelated;
 }
@@ -199,6 +200,12 @@ body {
    RESPONSIVE
 --------------------------------------------------------- */
 
+@media (max-width: 1000px) {
+    .header .logo img {
+        height: 30px;
+    }
+}
+
 @media (max-width: 700px) {
     .game-head {
         flex-direction: column;
@@ -212,8 +219,10 @@ body {
     .game-card img {
         width: 140px;
     }
+}
 
+@media (max-width: 500px) {
     .header .logo img {
-        height: 35px;
+        height: 25px;
     }
 }
