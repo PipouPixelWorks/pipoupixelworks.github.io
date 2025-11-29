@@ -9,7 +9,9 @@ title: "Jeux"
 {% for game in site.games %}
   <div class="game-card">
     {% if game.cover %}
-      <img src="{{ game.cover }}" alt="Cover {{ game.title }}">
+        <div class="game-cover">
+            <img src="{{ game.cover }}" alt="Cover {{ game.title }}">
+        </div>
     {% endif %}
     <h3>{{ game.title }}</h3>
     <p>{{ game.description }}</p>
