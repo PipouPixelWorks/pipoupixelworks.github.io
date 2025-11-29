@@ -32,9 +32,13 @@ nav a {
 }
 
 .game-cover {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 300px; /* Taille raisonnable */
+    max-width: 90%;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
 }
+
 
 .site-footer {
     margin-top: 40px;
@@ -72,4 +76,13 @@ nav a {
 .footer-contact a:hover {
     text-decoration: underline;
 }
+
+.privacy-box {
+    margin-top: 30px;
+    padding: 15px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+}
+
 

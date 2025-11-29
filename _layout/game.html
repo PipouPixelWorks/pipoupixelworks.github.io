@@ -20,12 +20,19 @@ layout: default
 
     <p><strong>Statut :</strong> {{ page.status }}</p>
 
-    <p><a href="{{ page.privacy_policy }}">Privacy Policy</a></p>
-
     <hr>
 
     <div class="game-content">
         {{ content }}
     </div>
+
+    {% if page.privacy_policy %}
+    <div class="privacy-box">
+        <p>
+            🔒 <strong>Privacy Policy :</strong>
+            <a href="{{ page.privacy_policy }}">Lire la politique de confidentialité</a>
+        </p>
+    </div>
+    {% endif %}
 </article>
 
