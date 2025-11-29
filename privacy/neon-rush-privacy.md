@@ -14,7 +14,7 @@ Chez **Pipou Pixel Works**, nous prenons la protection de votre vie privée trè
 
 Neon Rush ne collecte **aucune donnée personnelle directement**.  
 
-Cependant, certaines fonctionnalités peuvent utiliser des **services tiers** qui collectent des informations pour améliorer le jeu, fournir des publicités ou analyser les performances. Ces services incluent notamment :
+Certaines fonctionnalités utilisent des **services tiers** qui collectent des informations pour améliorer le jeu, fournir des publicités ou analyser les performances. Ces services incluent notamment :
 
 - **Google Play Services**  
 - **AdMob (Google)**  
@@ -28,14 +28,14 @@ Cependant, certaines fonctionnalités peuvent utiliser des **services tiers** qu
 
 > Aucun nom, email, adresse ou autre information personnelle identifiable n’est collecté directement par Neon Rush.
 
-### Données collectées via le leaderboard Google Play Games
+### Données collectées via le leaderboard Google Play Games (obligatoire)
 
-Si vous utilisez le leaderboard intégré à Neon Rush via Google Play Games, les informations suivantes sont collectées par Google pour afficher votre classement :
+Le leaderboard intégré à Neon Rush utilise **Google Play Games** pour gérer les classements. Les informations suivantes sont automatiquement collectées par Google et **ne peuvent pas être désactivées** :
 
 - Identifiant unique du joueur  
 - Score et rang  
 - Nom d’utilisateur et avatar Google (si le joueur est connecté)  
-- Données anonymisées pour les statistiques du leaderboard
+- Données anonymisées pour les statistiques du leaderboard  
 
 ---
 
@@ -50,7 +50,7 @@ Les données collectées par les services tiers sont utilisées pour :
 Les données collectées via le leaderboard Google Play Games sont utilisées uniquement pour :
 
 - Afficher votre classement dans le jeu  
-- Fournir des statistiques globales et anonymisées pour améliorer le gameplay
+- Fournir des statistiques globales et anonymisées pour améliorer le gameplay  
 
 ---
 
@@ -76,7 +76,8 @@ Les informations collectées via les services tiers peuvent être partagées ave
 
 En utilisant Neon Rush, vous acceptez que les services tiers collectent et utilisent les données comme décrit ci-dessus.  
 
-Si vous souhaitez **désactiver les publicités personnalisées**, vous pouvez ajuster les paramètres publicitaires de votre appareil ou dans votre compte Google.
+Si vous souhaitez **désactiver les publicités personnalisées**, vous pouvez ajuster les paramètres publicitaires de votre appareil ou dans votre compte Google.  
+> Le leaderboard Google Play Games est obligatoire et ne peut pas être désactivé.
 
 ---
 
@@ -89,11 +90,13 @@ Si un mineur utilise le jeu, nous recommandons que les parents ou tuteurs superv
 
 ## 7. Vos droits
 
-Vous pouvez nous contacter pour :
+Même si Neon Rush ne stocke pas de données personnelles directement, vous avez le droit de :
 
-- Demander des informations sur les données collectées  
+- Demander des informations sur les données collectées par les services tiers  
 - Demander la suppression des données vous concernant  
-- Poser toute question concernant la confidentialité  
+
+Pour les données collectées via **Google Play Games, AdMob ou Unity Analytics**, la suppression doit se faire **directement via les services tiers**.  
+Vous pouvez nous contacter pour recevoir de l’aide ou des instructions pour exercer ces droits.  
 
 **Contact :** [contact@pipoupixelworks.com](mailto:contact@pipoupixelworks.com)
 
