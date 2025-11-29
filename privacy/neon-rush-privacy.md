@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Politique de confidentialité - Neon Rush"
+permalink: /privacy/neon-rush-privacy/
 ---
 
 [← Retour au jeu](../games/neon-rush/)  
