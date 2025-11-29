@@ -1,17 +1,10 @@
 title: "Pipou Pixel Works"
-description: "Studio indépendant de développement de jeux mobile."
+description: "Studio indépendant de jeux mobile — Neon Rush & autres projets"
 baseurl: ""
 url: "https://pipoupixelworks.github.io"
-
 theme: minima
-
 collections:
-  games:
-    output: true
-    permalink: /games/:name/
-
+games:
+output: true
+permalink: /games/:name/
 markdown: kramdown
-
-exclude:
-  - README.md
-

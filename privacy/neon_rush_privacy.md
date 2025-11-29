@@ -1,23 +1,11 @@
 ---
-layout: privacy
-title: "Neon Rush – Privacy Policy"
+layout: default
+title: Neon Rush - Privacy Policy
 ---
 
-## Information We Collect
-Neon Rush does not collect any personal information directly.
 
-## Third-party Services
-
-The game may use the following SDKs:
-- Google Play Services
-- AdMob (if ads are added)
-
-Each service may collect anonymized data.  
-Please refer to their own privacy policies.
-
-## Data Sharing
-No personal data is sold or shared.
-
-## Contact
-Pour toute question : pipoupixelworks@gmail.com
-
+<h1>Privacy Policy — Neon Rush</h1>
+<p>Neon Rush ne collecte pas de données personnelles directement.</p>
+<p>Les SDK tiers utilisés (Google Play Services, Unity Analytics, AdMob) peuvent collecter des données anonymes.</p>
+<p>Aucune donnée personnelle n'est vendue ou partagée.</p>
+<p>Pour toute question : <a href="mailto:pipoupixelworks@gmail.com">pipoupixelworks@gmail.com</a></p>

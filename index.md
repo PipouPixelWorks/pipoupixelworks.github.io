@@ -1,22 +1,19 @@
 ---
 layout: default
-title: "Jeux"
+title: Accueil
 ---
 
-# Nos jeux
 
-<div class="game-grid">
+<h1>🎮 Nos jeux</h1>
+<div class="games-list">
 {% for game in site.games %}
-  <div class="game-card">
-    {% if game.cover %}
-        <div class="game-cover">
-            <img src="{{ game.cover }}" alt="Cover {{ game.title }}">
-        </div>
-    {% endif %}
-    <h3>{{ game.title }}</h3>
-    <p>{{ game.description }}</p>
-    <a href="{{ game.url }}">Voir le jeu</a>
-  </div>
+<div class="game-card">
+<img src="{{ game.cover }}" alt="{{ game.title }}" class="game-logo">
+<div class="game-info">
+<h2>{{ game.title }}</h2>
+<p>{{ game.description }}</p>
+<a class="btn" href="{{ game.url }}">Voir le jeu</a>
+</div>
+</div>
 {% endfor %}
 </div>
-

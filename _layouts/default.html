@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }} - Pipou Pixel Works</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+<a class="logo" href="/"><img src="/assets/img/studio_logo.png" alt="Pipou Pixel Works"></a>
+</header>
+<nav class="main-nav">
+<a href="/">Accueil</a>
+<a href="/mentions-legales.html">Mentions légales</a>
+</nav>
+<main class="content">
+{{ content }}
+</main>
+<footer class="footer">
+<p>© {{ "now" | date: "%Y" }} Pipou Pixel Works — Tous droits réservés.</p>
+</footer>
+</body>
+</html>
