@@ -1,17 +1,10 @@
 ---
 layout: game
 title: "Neon Rush"
-description: "Shoot'em up vertical futuriste en pixel art, rapide et nerveux."
+description: "Neon Rush est un endless runner pixel-art sur 3 lanes : votre cercle change automatiquement de couleur et vous devez passer les obstacles correspondants. Collectez des bonus pour améliorer votre score et survivez le plus longtemps possible dans ce jeu rapide et nerveux."
 platforms:
   - Android
 status: En développement
 cover: /assets/img/neonrush_logo.png
 privacy_policy: /privacy/neon-rush-privacy/
-screenshots:
-  - /assets/img/screenshots/shot1.png
-  - /assets/img/screenshots/shot2.png
-  - /assets/img/screenshots/shot3.png
 ---
-
-<p>Neon Rush est un shoot 'em up vertical où tu esquives, tires et exploses des vagues ennemies dans un univers néon.</p>
-
