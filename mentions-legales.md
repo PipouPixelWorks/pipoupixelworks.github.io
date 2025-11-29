@@ -13,4 +13,3 @@ title: Mentions légales
 **Hébergement :** GitHub Pages (GitHub, Inc.)
 
 Le site et ses contenus (textes, images, logos) sont la propriété de Pipou Pixel Works.
-

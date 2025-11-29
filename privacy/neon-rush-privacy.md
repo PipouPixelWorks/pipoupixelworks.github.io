@@ -14,4 +14,3 @@ Les versions du jeu distribuées via Google Play peuvent utiliser des services t
 - Unity Analytics (si utilisé)
 
 Pour toute question : pipoupixelworks@gmail.com
-

@@ -20,4 +20,3 @@ title: Accueil
     </article>
   {% endfor %}
 </section>
-
