@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>{{ page.title }} - {{ site.title }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }} - {{ site.title }}</title>
 
-  <!-- CSS via relative_url -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
-  <!-- Police pixel (Press Start 2P) -->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-  {% include header.html %}
 
-  <main class="site-content">
-    {{ content }}
-  </main>
+{% include header.html %}
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p>© {{ "now" | date: "%Y" }} Pipou Pixel Works — <a href="mailto:pipoupixelworks@gmail.com">pipoupixelworks@gmail.com</a></p>
-    </div>
-  </footer>
+<main class="site-content">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© {{ "now" | date: "%Y" }} Pipou Pixel Works — Tous droits réservés.</p>
+  </div>
+</footer>
+
 </body>
 </html>
 

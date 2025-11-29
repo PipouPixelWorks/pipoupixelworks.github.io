@@ -31,5 +31,29 @@
 
     {% if page.screenshots %}
     <section class="game-screenshots">
-      <h2>Screensh
+      <h2>Screenshots</h2>
+      <div class="screenshots-grid">
+        {% for shot in page.screenshots %}
+          <img src="{{ shot | relative_url }}" alt="Screenshot {{ forloop.index }}" class="screenshot-img">
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <section class="game-body">
+      {{ content }}
+    </section>
+
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© {{ "now" | date: "%Y" }} Pipou Pixel Works — Tous droits réservés.</p>
+  </div>
+</footer>
+
+</body>
+</html>
 
