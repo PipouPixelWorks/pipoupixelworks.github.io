@@ -3,22 +3,32 @@ layout: default
 ---
 
 <article class="game-page">
-    <h2>{{ page.title }}</h2>
 
-    {% if page.cover %}
-    <img class="game-cover" src="{{ page.cover }}" alt="Cover {{ page.title }}">
-    {% endif %}
+    <div class="game-header">
+        {% if page.cover %}
+        <img class="game-cover" src="{{ page.cover }}" alt="Cover {{ page.title }}">
+        {% endif %}
 
-    <p>{{ page.description }}</p>
+        <div class="game-info">
+            <h2>{{ page.title }}</h2>
+            <p>{{ page.description }}</p>
 
-    <h3>Plateformes</h3>
-    <ul>
-        {% for p in page.platforms %}
-        <li>{{ p }}</li>
-        {% endfor %}
-    </ul>
+            <h3>Plateformes</h3>
+            <ul>
+                {% for p in page.platforms %}
+                <li>{{ p }}</li>
+                {% endfor %}
+            </ul>
 
-    <p><strong>Statut :</strong> {{ page.status }}</p>
+            <p><strong>Statut :</strong> {{ page.status }}</p>
+
+            {% if page.privacy_policy %}
+            <p class="privacy-link">
+                🔒 <a href="{{ page.privacy_policy }}">Privacy Policy</a>
+            </p>
+            {% endif %}
+        </div>
+    </div>
 
     <hr>
 
@@ -26,13 +36,5 @@ layout: default
         {{ content }}
     </div>
 
-    {% if page.privacy_policy %}
-    <div class="privacy-box">
-        <p>
-            🔒 <strong>Privacy Policy :</strong>
-            <a href="{{ page.privacy_policy }}">Lire la politique de confidentialité</a>
-        </p>
-    </div>
-    {% endif %}
 </article>
 

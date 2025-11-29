@@ -15,6 +15,13 @@ nav a {
     margin-left: 15px;
 }
 
+.game-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .game-grid {
     display: grid;
     gap: 20px;
@@ -32,13 +39,20 @@ nav a {
 }
 
 .game-cover {
-    width: 300px; /* Taille raisonnable */
-    max-width: 90%;
-    display: block;
-    margin: 0 auto 20px;
+    width: 200px;       /* Petite et propre */
+    max-width: 100%;
     border-radius: 10px;
 }
 
+.game-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.privacy-link a {
+    text-decoration: none;
+    font-weight: bold;
+}
 
 .site-footer {
     margin-top: 40px;
@@ -85,4 +99,16 @@ nav a {
     text-align: center;
 }
 
+/* Responsive pour mobile */
+@media (max-width: 700px) {
+    .game-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .game-info {
+        text-align: center;
+    }
+}
 
