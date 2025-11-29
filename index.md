@@ -14,7 +14,11 @@ title: Accueil
       <img class="card-art" src="{{ game.cover | relative_url }}" alt="{{ game.title }}">
       <div class="card-info">
         <h2>{{ game.title }}</h2>
-        <p>{{ game.description }}</p>
+        {% if game.short_description %}
+        <p class="game-short-description">{{ game.short_description }}</p>
+      {% else %}
+        <p class="game-short-description">{{ game.description }}</p>
+      {% endif %}
         <a class="btn" href="{{ game.url | relative_url }}">Voir le jeu</a>
       </div>
     </article>
