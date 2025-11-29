@@ -5,6 +5,6 @@ url: "https://pipoupixelworks.github.io"
 theme: minima
 collections:
 games:
-output: true
-permalink: /games/:name/
+    output: true
+    permalink: /games/:name/
 markdown: kramdown
