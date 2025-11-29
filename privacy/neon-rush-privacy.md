@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Neon Rush — Privacy Policy
+permalink: /privacy/neon-rush-privacy/
 ---
 
 # Politique de confidentialité — Neon Rush
