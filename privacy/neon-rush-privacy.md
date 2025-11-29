@@ -77,6 +77,7 @@ Les informations collectées via les services tiers peuvent être partagées ave
 En utilisant Neon Rush, vous acceptez que les services tiers collectent et utilisent les données comme décrit ci-dessus.  
 
 Si vous souhaitez **désactiver les publicités personnalisées**, vous pouvez ajuster les paramètres publicitaires de votre appareil ou dans votre compte Google.  
+
 Le leaderboard Google Play Games est obligatoire et ne peut pas être désactivé.
 
 ---
