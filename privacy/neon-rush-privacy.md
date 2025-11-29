@@ -28,6 +28,15 @@ Cependant, certaines fonctionnalités peuvent utiliser des **services tiers** qu
 
 > Aucun nom, email, adresse ou autre information personnelle identifiable n’est collecté directement par Neon Rush.
 
+### Données collectées via le leaderboard Google Play Games
+
+Si vous utilisez le leaderboard intégré à Neon Rush via Google Play Games, les informations suivantes sont collectées par Google pour afficher votre classement :
+
+- Identifiant unique du joueur  
+- Score et rang  
+- Nom d’utilisateur et avatar Google (si le joueur est connecté)  
+- Données anonymisées pour les statistiques du leaderboard
+
 ---
 
 ## 2. Utilisation des données
@@ -37,6 +46,11 @@ Les données collectées par les services tiers sont utilisées pour :
 - Améliorer les performances et l’expérience du jeu  
 - Fournir des publicités ciblées et pertinentes  
 - Analyser les comportements des joueurs pour optimiser le gameplay  
+
+Les données collectées via le leaderboard Google Play Games sont utilisées uniquement pour :
+
+- Afficher votre classement dans le jeu  
+- Fournir des statistiques globales et anonymisées pour améliorer le gameplay
 
 ---
 
