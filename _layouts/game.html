@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ page.title }} - {{ site.title }}</title>
-
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
@@ -16,6 +15,7 @@
 
   <article class="game-page">
 
+    <!-- Section principale : logo à gauche, texte à droite -->
     <div class="game-head">
       <img class="game-art" src="{{ page.cover | relative_url }}" alt="{{ page.title }} logo">
       <div class="game-meta">
@@ -25,12 +25,13 @@
         <p>🚧 Statut : {{ page.status }}</p>
         {% if page.privacy_policy %}
         <p>
-        🔒 <a class="btn privacy-btn" href="{{ page.privacy_policy | relative_url }}">Privacy Policy</a>
+          🔒 <a class="btn privacy-btn" href="{{ page.privacy_policy | relative_url }}">Privacy Policy</a>
         </p>
         {% endif %}
       </div>
     </div>
 
+    <!-- Screenshots en grille -->
     {% if page.screenshots %}
     <section class="game-screenshots">
       <h2>Screenshots</h2>
@@ -58,3 +59,4 @@
 
 </body>
 </html>
+
